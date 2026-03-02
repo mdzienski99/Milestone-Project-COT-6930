@@ -24,3 +24,49 @@ python -m venv .venv
 # activate venv...
 pip install -r requirements.txt
 uvicorn service.app:app --reload --port 8000
+
+Endpoints:
+
+/healthz
+
+/recommend/{user_id}
+
+/metrics
+
+Milestones
+
+M1: Contract + proposal + architecture
+
+M2–M5: Kafka ingest, deployment, evaluation, monitoring, A/B testing, retraining
+
+
+---
+
+## 7) GitHub “repo hygiene” tasks (do these on GitHub.com)
+
+### A) Create Labels
+Repo → **Issues → Labels → New label**
+Create:
+- `milestone-1`, `milestone-2`, `milestone-3`, `milestone-4`, `milestone-5`
+- `kafka`, `ml`, `devops`, `documentation`, `bug`, `enhancement`
+
+### B) Create Project board
+Repo → **Projects → New Project → Board**
+Columns:
+- Backlog
+- In Progress
+- Done
+
+Create 5–8 issues and add them to the board.
+
+---
+
+## 8) Commit + push your changes
+
+Back in VS Code terminal:
+
+```bash
+git status
+git add .
+git commit -m "Milestone 1: repo skeleton + starter FastAPI + docs"
+git push
